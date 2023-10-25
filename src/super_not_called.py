@@ -3,7 +3,6 @@ from typing import TYPE_CHECKING
 import astroid
 from astroid import bases, nodes
 from pylint.checkers import BaseChecker, utils
-from pylint.interfaces import IAstroidChecker
 from pylint.checkers.utils import decorated_with, is_builtin_object, node_frame_class
 from pylint.interfaces import INFERENCE
 
@@ -35,8 +34,6 @@ def _ancestors_to_call(klass_node: nodes.ClassDef, method='__init__') -> dict[no
 
 
 class SuperNotCalledChecker(BaseChecker):
-
-    __implements__ = IAstroidChecker
 
     name = 'super-not-called'
     priority = -1
