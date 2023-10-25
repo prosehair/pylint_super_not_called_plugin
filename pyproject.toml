@@ -1,6 +1,6 @@
 [project]
 name = "pylint_super_not_called"
-version = "0.9.1"
+version = "0.10.0"
 authors = [
   { name="Nicolas Mussat", email="nicolas@prose.com" },
 ]
