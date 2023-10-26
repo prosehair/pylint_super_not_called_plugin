@@ -1,5 +1,5 @@
 venv:
-	[[ ! -d ".venv" ]] && python3 -m venv .venv || true
+	@[ ! -d ".venv" ] && python3 -m venv .venv || true
 	.venv/bin/pip install -r requirements.txt
 
 
